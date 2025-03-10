@@ -9,7 +9,7 @@ export default function HomeScreen() {
   const [webData, setwebData] = useState("");
   const request = new XMLHttpRequest();
 
-  function handlePressButtonAsync() {
+  function _handlePressButtonAsync() {
     request.onreadystatechange = e => {
       if (request.readyState !== 4){
         return
@@ -37,10 +37,10 @@ export default function HomeScreen() {
 
         <Button
           title='Go Request'
-          onPress={()=> handlePressButtonAsync()}
+          onPress={()=> _handlePressButtonAsync()}
         />
       </View>
-      <text> {webData} </text>
+      <Text> {webData} </Text>
     </View>
 
 
