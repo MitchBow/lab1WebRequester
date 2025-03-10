@@ -8,14 +8,14 @@ export default function HomeScreen() {
   return (
     <View style = {styles.containerColumn}>
       <View style = {styles.containerRow}>
-        <Button
-          title='Click me'
-          onPress={()=> alert("stoooooopppppp" + text)}
-        />
-        <TextInput
+      <TextInput
           style = {styles.input}
           onChangeText={onChangeText}
           value = {text}
+        />
+        <Button
+          title='Click me'
+          onPress={()=> alert("stoooooopppppp" + text)}
         />
       </View>
     </View>
