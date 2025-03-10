@@ -4,7 +4,7 @@ import { View, StyleSheet, Button, TextInput, Text } from 'react-native';
 
 
 export default function HomeScreen() {
-  const [text, onChangeText] = React.useState('https://google.com.au');
+  const [text, onChangeText] = React.useState('https://reactnative.dev/movies.json');
   
   const [webData, setwebData] = useState("");
   const request = new XMLHttpRequest();
