@@ -40,7 +40,7 @@ export default function HomeScreen() {
           onPress={()=> handlePressButtonAsync()}
         />
       </View>
-      <text> [webData] </text>
+      <text> {webData} </text>
     </View>
 
 
